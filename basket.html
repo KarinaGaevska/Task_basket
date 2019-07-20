@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="cart.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="basket_button">
+    <img src="images/basket.jpg" alt="">
+
+    <div class="information_btn">
+      <span>Количество товара</span>
+      <span>Сумма</span>
+    </div>
+
+  </div>
+  <!--end basket_button-->
+
+  <div class="overlay toggle-basket">
+    <div class="cart-items">
+      <div class="title">
+        Корзина
+      </div>
+      <div class="close">Х</div>
+
+      <div class="btn">
+        <div class="order-btn">Оформить заказ</div>
+        <div class="continue_buy-btn">Продолжить покупки</div>
+        <div class="delete_basket-btn">Очистить корзину</div>
+
+        <div class="total">
+          <p>К оплате</p>
+          <span class="total_sum">106,32</span>
+        </div>
+      </div>
+
+      <div class="contain_basket">
+        <div class="describe_basket">
+          <span>Товар</span>
+          <span>Единицы измерения</span>
+          <span>Количество</span>
+          <span>Цена,грню</span>
+          <span>Сумма</span>
+          <span>Удалить</span>
+        </div>
+
+
+        <div class="item">
+          <div class="inner-item">
+            <img class="apple" src="images/apple.jpg" alt="">
+            <span>Яблоки</span>
+            <span>кг</span>
+            <div class="goods-item-buy" data-identity="${item.identity}">
+              <button class="plus">+</button>
+              <button class="sum">0</button>
+              <button class="minus" disabled="disabled">-</button>
+              <span>сумма</span>
+              <span>общая сумма</span>
+              <img class="img_close" src="images/close.png" alt="">
+            </div>
+            <!--end inner item-->
+          </div>
+          <!--end item-->
+          </div>
+
+          <div class="item">
+            <div class="inner-item">
+              <img class="pear" src="images/pear.jpg" alt="">
+              <span>Груши</span>
+              <span>кг</span>
+              <div class="goods-item-buy" data-identity="${item.identity}">
+                <button class="plus">+</button>
+                <button class="sum">0</button>
+                <button class="minus" disabled="disabled">-</button>
+                <span>сумма</span>
+                <span>общая сумма</span>
+                <img class="img_close" src="images/close.png" alt="">
+              </div>
+              <!--end inner item-->
+            </div>
+            <!--end item-->
+
+
+
+          </div>
+          <!--end contain_basket-->
+        </div>
+        <!--end overlay-->
+
+
+      </div>
+      <!--end cart-items-->
+
+      <script src="cart.js"></script>
+</body>
+
+</html>
